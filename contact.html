@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: yellow;
+            overflow-x: hidden;
+        }
+
+        /* Video Background */
+        .video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Navigation Dialog Box (Fixed) */
+        .dialog-box {
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px yellow;
+            text-align: center;
+            z-index: 1000;
+            width: max-content;
+        }
+
+        .dialog-box a {
+            text-decoration: none;
+            color: yellow;
+            font-size: 18px;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .dialog-box a:hover {
+            color: white;
+        }
+
+        /* Logo Styling */
+        .logo {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            width: 80px;
+            height: auto;
+            z-index: 1000;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            position: relative;
+            margin-top: 80px; /* Space for fixed navbar */
+            text-align: center;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .contact-container h1 {
+            margin-bottom: 30px;
+        }
+
+        /* Contact Cards */
+        .contact-card {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 15px;
+            width: 80%;
+            max-width: 400px;
+            margin: 15px auto;
+            box-shadow: 0 0 10px yellow;
+            text-align: center;
+        }
+
+        .contact-card h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .contact-card a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-card a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Logo -->
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <!-- Navigation Dialog Box -->
+    <div class="dialog-box">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sponsorship.html">Sponsorship</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <h1>Contact Team Thunderbird</h1>
+
+        <!-- Contact Cards -->
+        <div class="contact-card">
+            <h2>Bhairavi Mahadev</h2>
+            <p>📞 +971 50 988 3728</p>
+            <p>📧 <a href="mailto:bhairavi.mahadev@gmail.com">bhairavi.mahadev@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+            <h2>Jeremiah Daniel</h2>
+            <p>📞 +971 56 952 9595</p>
+            <p>📧 <a href="mailto:jeremiahd2904@gmail.com">jeremiahd2904@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+            <h2>Nihal Naveen</h2>
+            <p>📞 +971 55 492 0676</p>
+            <p>📧 <a href="mailto:nihal.mohd2008@gmail.com">nihal.mohd2008@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+            <h2>Saisha Khullar</h2>
+            <p>📞 +971 56 149 3035</p>
+            <p>📧 <a href="mailto:saikhu7000@gmail.com">saikhu7000@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+            <h2>Rashdan Harsh</h2>
+            <p>📞 +971 50 309 4828</p>
+            <p>📧 <a href="mailto:razdan.harsh@gmail.com">razdan.harsh@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+            <h2>Aarush Patil</h2>
+            <p>📞 +971 54 313 6739</p>
+            <p>📧 <a href="mailto:aarushpatil108@gmail.com">aarushpatil108@gmail.com</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
