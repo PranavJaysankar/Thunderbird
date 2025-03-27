@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsorship</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: yellow;
+            overflow-x: hidden;
+        }
+
+        /* Video Background */
+        .video-container video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 110%;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: contain;
+            z-index: -1;
+        }
+
+        /* Navigation */
+        .dialog-box {
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px yellow;
+            text-align: center;
+            z-index: 1000;
+            width: max-content;
+        }
+
+        .dialog-box a {
+            text-decoration: none;
+            color: yellow;
+            font-size: 18px;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .dialog-box a:hover {
+            color: white;
+        }
+
+        /* Logo */
+        .logo {
+            position: fixed;
+            top: 1px;
+            right: 20px;
+            width: 250px;
+            height: auto;
+            z-index: 1000;
+        }
+
+        /* Content Container */
+        .content-container {
+            position: relative;
+            margin-top: 80px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-container {
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px yellow;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* WHY PARTNER WITH US */
+        .why-partner {
+            margin: 50px auto 30px auto;
+            max-width: 900px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px yellow;
+            text-align: left;
+        }
+
+        .why-partner h2 {
+            color: yellow;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .why-partner p {
+            color: white;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Current Sponsors */
+        .sponsors-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .sponsors-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+.sponsors-container {
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px yellow;
+    padding: 20px;
+    flex: 0 1 47%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+        .sponsors-container h2 a {
+            color: yellow;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .sponsors-container h2 a:hover {
+            color: white;
+        }
+
+        .sponsors-container img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .sponsor-info {
+            margin-top: 20px;
+            font-size: 16px;
+            text-align: justify;
+            padding: 10px;
+            color: white;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video Background -->
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Logo -->
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <!-- Navigation -->
+    <div class="dialog-box">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sponsorship.html">Sponsorship</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-container">
+        <h1>Sponsorship Opportunities</h1>
+
+        <!-- Sponsorship Tier Image -->
+        <div class="image-container">
+            <img src="sponsorship.jpeg" alt="Sponsorship Packages">
+        </div>
+
+        <!-- Why Partner with Us -->
+        <div class="why-partner">
+            <h2>Why Partner with Us?</h2>
+            <p><strong>Be Part of Our Growth:</strong><br>
+            Join us at the start of our F1 in Schools journey and watch your brand grow as we advance through competitions. Early sponsorship offers long-term exposure and success.</p>
+
+            <p><strong>Targeted Audience & Engagement:</strong><br>
+            Connect with future engineers, tech enthusiasts, and educators. Gain recognition as a leader in innovation and education by engaging with tomorrow's professionals.</p>
+
+            <p><strong>Support STEM & CSR:</strong><br>
+            Your sponsorship fuels STEM education, nurtures young talent, and aligns with your CSR goals by investing in the future of technology and innovation.</p>
+        </div>
+
+        <!-- Current Sponsors Section -->
+        <div class="sponsors-section">
+            <h1>Current Sponsors</h1>
+
+            <div class="sponsors-row">
+                <!-- Hale Education -->
+                <div class="sponsors-container">
+                    <h2><a href="https://www.haleeducation.com/" target="_blank">Hale Education</a></h2>
+                    <img src="hale.webp" alt="Hale Education Logo">
+                    <div class="sponsor-info">
+                        <p>
+                            We are proud to have Hale Education as one of our esteemed sponsors, supporting students in their journey toward higher education.
+                            As the GCC’s longest-serving and premier college admissions consulting firm, Hale Education has helped countless students gain admission
+                            to top universities worldwide through ethical guidance, personalized mentorship, and expert application support.
+                        </p>
+                        <p>
+                            Their commitment to excellence is reflected in their 850+ university acceptances for 2024, including 660+ offers from U.S. universities and 120+ acceptances to Top 30 U.S. institutions.
+                            Hale’s counselors, graduates of top global universities, provide holistic mentorship, while their proprietary tech platform offers full transparency to students and parents.
+                        </p>
+                        <p>
+                            Their dedication to shaping strong academic and extracurricular profiles, coupled with their proprietary tech-driven approach, makes them a leader in university admissions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- F1 Bearings -->
+                <div class="sponsors-container">
+                    <h2><a href="https://www.f1bearings.com/">F1 Bearings</a></h2>
+                    <img src="sponsorship1.jpeg" alt="F1 Bearings Logo">
+                    <div class="sponsor-info">
+                        <p>
+                            F1 Bearings is a leading provider of precision-engineered bearings, specializing in high-performance solutions for industries including motorsports.
+                            As a valued sponsor, F1 Bearings supports the cutting-edge technology and innovation in competitive racing.
+                        </p>
+                        <p>
+                            Their bearings are built for speed, durability, and efficiency—designed to perform under the most demanding conditions.
+                            Beyond motorsports, F1 Bearings proudly supports the F1 in Schools program, inspiring young innovators globally.
+                        </p>
+                        <p>
+                            Their sponsorship helps students build, design, and race miniature F1 cars, fostering creativity, teamwork, and problem-solving—driving the future of motorsport and engineering.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
